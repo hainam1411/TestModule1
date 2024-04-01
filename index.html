@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let diem = [4,5,6]
+    // function findAvg(){
+    //     let sum = 0;
+    //     let tbc = 0;
+    //     for (let i = 0; i < diem.length; i++) {
+    //         sum +=diem[i];
+    //        tbc = sum/diem.length;
+    //     }
+    //     alert("Điểm TBC của học sinh là: "+ tbc);
+    // }
+    // findAvg(diem);
+
+
+    //BÀi 2
+
+    // function insertNumberToArray(arr,x,index){
+    //
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (index < 0 || index > arr.length){
+    //             return arr;
+    //         }else{
+    //             let NewArr = [];
+    //             for (let i = 0,  j = 0; i <arr.length;i++, j++) {
+    //                 if (i === index){
+    //                     NewArr[index] = x;
+    //                     j+=1;
+    //                 }
+    //                 NewArr[j] = arr[i];
+    //             }
+    //             return NewArr;
+    //         }
+    //     }
+    // }
+    // console.log(insertNumberToArray([3,4,5,7,2,1,7],7,2))
+
+   // Bài 3
+    function sumOfListPrime(x) {
+        let sum = 0;
+        for (let i = 0; i <= x; i++) {
+           // let isPrime = true;
+            for (let j = 2; j <i; j++) {
+                if (i % j === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                sum += i;
+            }
+        }
+
+        return sum;
+    }
+    console.log(sumOfListPrime(10));
+</script>
+</body>
+</html>
